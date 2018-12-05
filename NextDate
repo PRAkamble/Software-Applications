@@ -1,0 +1,15 @@
+import java.sql.Date;
+import java.util.Calendar;
+
+public class Sample {
+	public static void main(String[] args) {
+		
+		Date today = new java.sql.Date(new java.util.Date().getTime());
+		
+		Date nextDay = new java.sql.Date(today.getTime()+24*60*60*1000);
+		Calendar cal = Calendar.getInstance();
+		
+		
+		System.out.println("Today "+today+"   next day "+nextDay);
+	}
+}
